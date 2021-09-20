@@ -1,0 +1,155 @@
+:root{
+    --main-sW-theme: #BF7E6B;
+}
+@font-face {
+    font-family: 'starWars';
+    src: url('starjedi/Starjhol.ttf');
+}
+@font-face {
+    font-family: 'starWarsFill';
+    src: url('starjedi/Starjedi.ttf');
+}
+@font-face {
+    font-family: 'starWarsMono';
+    src: url('anakinmono.ttf');
+}
+body {
+    display: flex;
+    background-image: url(https://www.nasa.gov/sites/default/files/thumbnails/image/heic1806b_1.jpg);
+    font-family: starWarsFill;
+    justify-content: center;
+}
+main {
+    color:  var(--main-sW-theme,blue);
+    background-color: #000000;
+    border: #BF7E6B;
+    border-style: solid;
+    padding: 2.5%;
+    text-align: left;
+    width: 35vw;
+}
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+    main { width:85vw}
+  }
+  
+  /* Small devices (portrait tablets and large phones, 600px and up) */
+  @media only screen and (min-width: 600px) {
+    main { width:75vw}
+  }
+  
+  /* Medium devices (landscape tablets, 768px and up) */
+  @media only screen and (min-width: 768px) {
+    main { width:65vw}  } 
+  
+  /* Large devices (laptops/desktops, 992px and up) */
+  @media only screen and (min-width: 992px) {
+    main { width:55vw}
+  } 
+  
+  /* Extra large devices (large laptops and desktops, 1200px and up) */
+  @media only screen and (min-width: 1200px) {
+    main { width:45vw}
+  }
+.navBar{
+    list-style-type: none;
+    display: flex;
+    align-content: space-evenly;
+    justify-content: space-around;
+    width: 100%;
+    padding: 0px;
+    border: 0px;
+    margin: 0px;
+    font-size: 25px;
+}
+#homeHeading1{
+    border-top-style: dotted; 
+    color:var(--main-sW-theme,blue); 
+    font-size: 40px; 
+    text-align: center; 
+    margin: 0px; 
+    font-style: italic;
+}
+#homeHeading2{
+    margin: 0px; 
+    font-family: starWars; 
+    font-size: 75px;
+    border-bottom-style: dotted; 
+    color:var(--main-sW-theme,blue); 
+    text-justify:distribute; 
+    font-style: italic;
+}
+ul.navBar > li{
+    display: inline-block;
+    margin: 1%;
+}
+ul li > a {
+    text-decoration: none;
+}
+ul.navBar a:visited{
+    color: var(--main-sW-theme,blue);
+}
+ul.navBar a:link{
+    color: var(--main-sW-theme,blue);
+}
+ul.navBar a:hover{
+    color: #FFFFFF;
+}
+.grid-container {
+    display: grid;
+    grid-template-rows: 25% 15%;
+    font-family: starWarsMono;
+    font-size: 25px;
+}
+#homeImage{
+    display: grid;
+    justify-content: center; 
+    align-items: center; 
+    margin: 10px;
+}
+.choose-side-grid {
+    display: grid;
+    grid-template-columns: 33.3% 33.3% 33.3%;
+}
+.Jedi {
+    display: grid;
+    content: url("lightsaberN.svg");
+    width: 100%;
+    height: auto;
+    margin: 10px;
+}
+.Jedi:hover {
+    display: grid;
+    content:  url("lightsaberJ.svg");
+    width: 100%;
+    height: auto;
+    margin: 10px;
+}
+.Neutral {
+    display: grid;
+    content: url("lightsaberN.svg");
+    width: 100%;
+    height: auto;
+    margin: 10px;
+}
+.Neutral:hover{
+    display: grid;
+    content: url("lightsaberNN.svg");
+    width: 100%;
+    height: auto;
+    margin: 10px;
+}
+.Sith {
+    display: grid;
+    content: url("lightsaberN.svg");
+    width: 100%;
+    height: auto;
+    margin: 10px;
+}
+.Sith:hover {
+    display: grid;
+    content: url("lightsaberS.svg");
+    width: 100%;
+    height: auto;
+    margin: 10px;
+}
