@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>contact</title>
+</head>
+<body>
+    <main>
+        <nav>
+            <ul class="navBar">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="">Featured</a></li>
+                <li><a href="">News</a></li>
+                <li><a href="">Blog</a></li>
+                <li><a href="contact.html">Contact</a></li>
+        </ul> 
+        </nav>
+        <div class="flex">
+
+                <div class="width">
+                <label for="fname">First name: </label>
+                <div class="width">
+                <input type="text" id="fname" name="fname" value="John">
+                </div>
+                </div>
+
+                <div class="width" >
+                <label for="lname">Last name: </label>
+                <div class="width">
+                <input type="text" id="lname" name="lname" value="Doe">
+                </div>
+                </div>
+
+                <div class="width">
+                <label for="email">Email: </label>
+                <div class="width">
+                <input type="email" id="email" name="email" value="johndoe@gmail.com">
+                </div>
+                </div>
+
+                <div class="width">
+                <label for="commentBox">Comments: </label>
+                <div class="width">
+                <input style="width: auto; height: 100px;" type="text" id="commentBoxInput" name="commentBox" value="John Doe likes peanuts.">
+                </div>
+                </div>
+
+                <div class="width" style="width:50%;justify-content:space-around;">  
+                <input id="buttonSubmit" type="submit" value="Submit"> <input id="buttonClear" type="button" value="Clear">  
+                </div>
+        </div>
+    </main>
+    <script>
+        let buttonSubmit = document.getElementById("buttonSubmit");
+        let buttonClear = document.getElementById("buttonClear");
+        let commentBoxInput = document.getElementById("commentBoxInput");
+        let exampleText = "";
+        buttonClear.addEventListener('click', function() {commentBoxInput.value = exampleText;},false);
+        buttonSubmit.addEventListener('click', function() {alert(commentBoxInput.value);},false);
+    </script>
+</body>
+</html>

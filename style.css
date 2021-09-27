@@ -102,6 +102,22 @@ ul.navBar a:hover{
     font-family: starWarsMono;
     font-size: 25px;
 }
+.width {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: 0.5%;
+}
+.flex {
+    display: flex;
+    flex-direction: row;
+    font-size: 25px;
+    margin: 10%;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
 #homeImage{
     display: grid;
     justify-content: center; 
